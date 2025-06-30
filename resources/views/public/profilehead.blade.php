@@ -8,8 +8,8 @@
                 @endif
         </div>
         <div class="profile-card pt-5">
-            <h1 class="header-title">{{ $user->name }}</h1>
-            <h6>
+            <h1 class="header-title">{{ $user->name }} <i class="icon-patch-check-fill text-primary verficon" title="@lang('messages.new.verified')"></i></h1>
+            {{---<h6>
                 {{ $user->username }}
                 @isset($user->role)
                 <i class="icon-patch-check-fill text-primary verficon" title="@lang('messages.new.verified')"></i>
@@ -17,7 +17,7 @@
                 @isset($user->role)
                     <span class="text-warning ms-2">@lang($user->role)</span>
                 @endisset
-            </h6>
+            </h6>---}}
             <h6>
                 @lang('messages.user.level') 
                 <span class="badge bg-secondary">{{ levelNumber($point->sum('likes_count')) }}</span>

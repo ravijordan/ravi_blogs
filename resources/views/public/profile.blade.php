@@ -14,12 +14,14 @@
                       <li class="nav-item nav-pro">
                         <a class="nav-link active" aria-current="page" href="{{ url('/profile/' . $user->username) }}">@lang('messages.new.posts')</a>
                       </li>
+                      <!--
                       <li class="nav-item nav-pro">
                         <a class="nav-link" href="{{ url('/followers/' . $user->username) }}">@lang('messages.new.followers') <span class="badge bg-secondary">{{ shortNumber($user->followers()->count()) }}</span></a>
                       </li>
                       <li class="nav-item nav-pro">
                         <a class="nav-link" href="{{ url('/following/' . $user->username) }}">@lang('messages.new.following') <span class="badge bg-secondary">{{ shortNumber($user->follows()->count()) }}</span></a>
                       </li>
+					  -->
                     </ul>
                 </div>
             </div>
